@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.zrow.gridlayout.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <Button
+            android:id="@+id/p2"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="#FFFFFF"
+            android:textSize="45sp"
+            android:text="0"
+            android:background="@drawable/player2button" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:id="@+id/p1"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#FFFFFF"
+            android:text="0"
+            android:textSize="45sp"
+            android:background="@drawable/player1button" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Starts in 3s..."
+            android:textSize="30sp"
+            android:id="@+id/timer"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+        TextView
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="0"
+            android:id="@+id/p1s"
+            android:layout_above="@+id/p1"
+            android:layout_centerHorizontal="true" />
+
+        TextView
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="0"
+            android:id="@+id/p2s"
+            android:layout_below="@+id/p2"
+            android:layout_centerHorizontal="true" />
+
+        Button
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="@string/restart"
+            android:textColor="#FFFFFF"
+            android:id="@+id/restart"
+            android:layout_alignTop="@+id/countdown"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/restartbutton" />
+
+        Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:id="@+id/countdown"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/startbutton" />
+
+    </RelativeLayout>
+</RelativeLayout>
